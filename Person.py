@@ -8,4 +8,4 @@ class Person:
         return f"Person {self.id}: Money=${self.money}, Stocks={self.stocks}"
 
     def produce_value(self):
-        return self.money + 210
+        self.money += 210
