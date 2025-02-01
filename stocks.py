@@ -13,7 +13,7 @@ def stock_management(stock_market):
 
 def trade_stock(player, stock_market=None, buy="none"):
     if stock_market is None:
-        stock_market = {"price": 100.0, "available_stocks": 1000}  # Fix: Avoid mutable default
+        stock_market = {"price": 100.0, "available_stocks": 1000}
     if buy == "buy":
         max_affordable_stocks = int(player.money / stock_market["price"])
         stocks_to_buy = random.randint(1, max_affordable_stocks) if max_affordable_stocks > 0 else 0
